@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3a5d1138c9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container" id="containerid">
+
+ <div class="playlist" id="songlistid"> 
+    <div class="songitem" id="song0">Pehli Baarish Mein </div>
+    <div class="songitem"id="song1">Tu Yaad aya</div>
+    <div class="songitem" id="song2">Jeene Laga Hun</div>
+    <div class="songitem" id="song3">Tujh Mein Rab Dikhta</div>
+    <div class="songitem" id="song4">Falak Tak Chal Sath</div>
+    <div class="songitem" id="song5">Love me Like You Do</div>
+    <!-- <div class="songitem" id="song"></div>
+    <div class="songitem" id="song"></div>
+    <div class="songitem" id="song"></div>
+    <div class="songitem" id="song"></div>
+    <div class="songitem" id="song"></div> -->
+    <!-- <i class="fa-solid fa-bars"></i> -->
+</div> 
+<div class="nav ">
+    <div class="circlenav " id="songlist"style="z-index: 5;" ><i class="fa-solid fa-bars"  id="songarrow"></i></div>
+    <div class="circlenav" onclick="drawer()" ><i class="fa-solid fa-sun" id="toprighticon"></i></div>
+</div>
+
+<!-- <i class="fa-solid fa-moon"></i> -->
+<!-- <i class="fa-solid fa-sun"></i> -->
+<div class="imagesection">
+    <div class="bg"></div>
+    <img src="image/image1.jpg" id="img1" class="imagehover" >
+</div>
+
+
+
+
+<div class="namesection">
+<div>
+        <h2 id="titleid">Pehli Baarish Mein</h2>
+        <p style="margin-top:-15px;" id="singerid">Jubin Nautiyal</p>
+</div>
+</div>
+
+
+<audio id="song">
+    <source src="audio/song1.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="timebox">
+    <span id="currenttime">0.0</span>
+    <span id="totaltime"></span>
+</div>
+
+
+<div class="control" ><input type="range" id="progress"></div>
+<div class="last">
+<div class="circle" id="preid" ><i class="fa-solid fa-backward" ></i></div>
+<div class="circle" id="playpauseid" >  
+     <!-- onclick="playpausefunction()" -->
+<i class="fa-solid fa-circle-play" id="controlicon" ></i></div>
+<div class="circle" id="nextid"><i class="fa-solid fa-forward" ></i></div>
+</div>
+</div>
+
+
+
+<script src="music_player.js"></script>
+</body>
+</html>
